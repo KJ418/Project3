@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
     public void displayImage1(View v){
         ImageView image = findViewById(R.id.imageView);
         Animation animFadeOut = AnimationUtils.loadAnimation(this, R.anim.fadeout);
