@@ -1,5 +1,6 @@
 package com.example.project3;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayImage1(View v){
         ImageView image = findViewById(R.id.imageView);
+        ImageView border = findViewById(R.id.border);
+
         Animation animFadeOut = AnimationUtils.loadAnimation(this, R.anim.fadeout);
         Animation animFadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         image.startAnimation(animFadeOut);
 
         image.setImageResource(R.drawable.turtwig);
+        border.setBackgroundColor(Color.parseColor("#4CAF50"));
 
         animFadeIn.reset();
         image.clearAnimation();
@@ -45,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayImage2(View v){
         ImageView image = findViewById(R.id.imageView);
+        ImageView border = findViewById(R.id.border);
         Animation animFadeOut = AnimationUtils.loadAnimation(this, R.anim.fadeout);
         Animation animFadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
@@ -53,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         image.startAnimation(animFadeOut);
 
         image.setImageResource(R.drawable.chimchar);
+        border.setBackgroundColor(Color.parseColor("#F44336"));
 
         animFadeIn.reset();
         image.clearAnimation();
@@ -61,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayImage3(View v){
         ImageView image = findViewById(R.id.imageView);
+        ImageView border = findViewById(R.id.border);
         Animation animFadeOut = AnimationUtils.loadAnimation(this, R.anim.fadeout);
         Animation animFadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
@@ -69,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         image.startAnimation(animFadeOut);
 
         image.setImageResource(R.drawable.piplup);
+        border.setBackgroundColor(Color.parseColor("#2196F3"));
 
         animFadeIn.reset();
         image.clearAnimation();
